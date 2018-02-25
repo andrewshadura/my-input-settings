@@ -1,0 +1,192 @@
+partial alphanumeric_keys
+
+xkb_symbols "andrewsh" {
+
+    key <LWIN> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1] = [ Super_L ],
+        actions[Group1] = [ LockGroup(group=1), LockGroup(group=2), LockGroup(group=+1), LockGroup(group=-1) ]
+    };
+
+    modifier_map Mod4   { Super_L };
+
+    key <MENU> {         [  ISO_Next_Group,  ISO_Prev_Group ] };
+
+    key <AE11> {
+        symbols[Group1]= [           minus,      underscore,       emdash, endash ],
+        symbols[Group2]= [           minus,      underscore,       emdash, endash ],
+        symbols[Group3]= [           minus,      underscore,       emdash, endash ]
+    };
+
+    key <BKSL> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1]= [       backslash,             bar,      dead_grave,      dead_breve ],
+        symbols[Group2]= [           slash,       backslash ],
+        symbols[Group3]= [           slash,             bar ]
+    };
+
+    key <TLDE> {
+        type[group1]= "FOUR_LEVEL",
+        type[group2]= "FOUR_LEVEL",
+        type[group3]= "FOUR_LEVEL",
+        symbols[Group1]= [           grave,      asciitilde,           U0301,           U0301 ],
+        symbols[Group2]= [     Cyrillic_io,     Cyrillic_IO,           U0301,           U0301 ],
+        symbols[Group3]= [     Cyrillic_io,     Cyrillic_IO,           U0301,           U0301 ]
+    };
+
+    key <AE04> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1]= [               4,          dollar,          ssharp,        EuroSign ],
+        symbols[Group2]= [               4,       semicolon ],
+        symbols[Group3]= [               4,       semicolon ]
+    };
+    key <AE05> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1]= [               5,         percent,         onehalf,      onequarter ],
+        symbols[Group2]= [               5,         percent ],
+        symbols[Group3]= [               5,         percent ]
+    };
+
+    key <AD01> {
+        type[group1]= "FOUR_LEVEL_SEMIALPHABETIC",
+        type[group2]= "FOUR_LEVEL_ALPHABETIC",
+        type[group3]= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               q,               Q,              at,           U00A7 ],
+        symbols[Group2]= [ Cyrillic_shorti, Cyrillic_SHORTI,    Ukrainian_yi,    Ukrainian_YI ],
+        symbols[Group3]= [ Cyrillic_shorti, Cyrillic_SHORTI,    Ukrainian_yi,    Ukrainian_YI ]
+    };
+
+    key <AD05> {
+        type[group1]= "FOUR_LEVEL_ALPHABETIC",
+        type[group2]= "FOUR_LEVEL_ALPHABETIC",
+        type[group3]= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               t,               T,          tslash,          Tslash ],
+        symbols[Group2]= [     Cyrillic_ie,     Cyrillic_IE,    Ukrainian_ie,    Ukrainian_IE ],
+        symbols[Group3]= [     Cyrillic_ie,     Cyrillic_IE,    Ukrainian_ie,    Ukrainian_IE ]
+    };
+
+    key <AD09> {
+        type[group1]= "FOUR_LEVEL_ALPHABETIC",
+        type[group2]= "FOUR_LEVEL_ALPHABETIC",
+        type[group3]= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               o,               O,          oslash,          Oslash ],
+        symbols[Group2]= [  Cyrillic_shcha,  Cyrillic_SHCHA, Byelorussian_shortu, Byelorussian_SHORTU ],
+        symbols[Group3]= [ Byelorussian_shortu, Byelorussian_SHORTU, Cyrillic_shcha,  Cyrillic_SHCHA  ]
+    };
+
+    key <AD12> {
+        type[group1]= "FOUR_LEVEL",
+        type[group2]= "FOUR_LEVEL_ALPHABETIC",
+        type[group3]= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [    bracketright,      braceright,      dead_tilde,     dead_macron ],
+        symbols[Group2]= [ Cyrillic_hardsign, Cyrillic_HARDSIGN,  apostrophe,      apostrophe ],
+        symbols[Group3]= [      apostrophe,  apostrophe, Cyrillic_hardsign, Cyrillic_HARDSIGN ]
+    };
+
+    key <AC03> {
+        type[group1]= "FOUR_LEVEL_ALPHABETIC",
+        type[group2]= "ALPHABETIC",
+        type[group3]= "ALPHABETIC",
+        symbols[Group1]= [               d,               D,          scaron,          Scaron ],
+        symbols[Group2]= [     Cyrillic_ve,     Cyrillic_VE ],
+        symbols[Group3]= [     Cyrillic_ve,     Cyrillic_VE ]
+    };
+
+    key <AB05> {
+        type[group1]= "FOUR_LEVEL_SEMIALPHABETIC",
+        type[group2]= "FOUR_LEVEL_ALPHABETIC",
+        type[group3]= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               b,               B,                U2033,                U2032 ],
+        symbols[Group2]= [      Cyrillic_i,      Cyrillic_I,          Ukrainian_i,          Ukrainian_I ],
+        symbols[Group3]= [     Ukrainian_i,     Ukrainian_I,           Cyrillic_i,           Cyrillic_I ]
+    };
+
+    key <AD03> {
+        type[group1]= "FOUR_LEVEL_ALPHABETIC",
+        type[group2]= "ALPHABETIC",
+        type[group3]= "ALPHABETIC",
+        symbols[Group1]= [               e,               E,           schwa,           U025B ],
+        symbols[Group2]= [      Cyrillic_u,      Cyrillic_U ],
+        symbols[Group3]= [      Cyrillic_u,      Cyrillic_U ]
+    };
+    key <LSGT> {
+        type[group1]= "FOUR_LEVEL",
+        type[group2]= "FOUR_LEVEL",
+        type[group3]= "FOUR_LEVEL",
+#         symbols[Group1]= [           U201D,           U201C,  guillemotright,   guillemotleft ],
+#         symbols[Group2]= [  guillemotright,   guillemotleft,           U201D,           U201C ],
+#         symbols[Group3]= [  guillemotright,   guillemotleft,           U201D,           U201C ]
+        symbols[Group1]= [           U2019,           U2018,           U201D,           U201C ],
+        symbols[Group2]= [  guillemotright,   guillemotleft,           U201C,           U201E ],
+        symbols[Group3]= [  guillemotright,   guillemotleft,           U201C,           U201E ]
+    };
+
+    key <LEFT> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        [            Left,            Left,           U2190,           U21D0 ]
+    };
+    key <RGHT> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        [           Right,           Right,           U2192,           U21D2 ]
+    };
+    key <UP> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        [              Up,              Up,           U2191,           U21D1 ]
+    };
+    key <DOWN> {
+        type= "FOUR_LEVEL_ALPHABETIC",
+        [            Down,            Down,           U2193,           U21D3 ]
+    };
+    key <SPCE> {
+        type[Group1]="FOUR_LEVEL",
+        symbols[Group1]= [ space, space, Multi_key, nobreakspace ]
+    };
+
+};
+
+partial modifier_keys
+xkb_symbols "sun" {
+    // override key <MENU> {         [  Multi_key ] };
+    // override key <COMP> {         [  Multi_key ] };
+
+    key <LALT> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1] = [ Super_L ],
+        actions[Group1] = [ LockGroup(group=1), LockGroup(group=2), LockGroup(group=+1), LockGroup(group=-1) ]
+    };
+
+    modifier_map Mod4   { Super_L };
+
+    key  <LWIN> {         [        NoSymbol,           Alt_L ] };
+
+    key <RWIN> {
+        type= "ONE_LEVEL",
+        symbols[Group1]= [ ISO_Level3_Shift ]
+    };
+
+    key <RALT> {         [       Control_R ] };
+
+};
+
+partial modifier_keys
+xkb_symbols "win_lang_super" {
+    key <LWIN> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1] = [ Super_L ],
+        actions[Group1] = [ LockGroup(group=1), LockGroup(group=2), LockGroup(group=+1), LockGroup(group=-1) ]
+    };
+
+    modifier_map Mod4   { Super_L };
+};
+
+
+partial modifier_keys
+xkb_symbols "alt_lang_super" {
+    key <LALT> {
+        type[group1]= "FOUR_LEVEL",
+        symbols[Group1] = [ Super_L ],
+        actions[Group1] = [ LockGroup(group=1), LockGroup(group=2), LockGroup(group=+1), LockGroup(group=-1) ]
+    };
+
+    modifier_map Mod4   { Super_L };
+};

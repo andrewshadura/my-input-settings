@@ -1,0 +1,17 @@
+#!/bin/sh
+
+[ "$1" != "XIDeviceEnabled" ] && exit 0
+
+case "$3" in
+    XISlaveKeyboard)
+        logger "$4 attached"
+        ~/.xkb_load
+    ;;
+    XISlavePointer)
+        logger "$4 attached"
+        [ "$4" != "SynPS/2 Synaptics TouchPad" ] && exit 0
+        . ~/.touchpad.sh
+    ;;
+esac
+
+

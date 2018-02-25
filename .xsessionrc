@@ -1,0 +1,9 @@
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Djava.net.preferIPv6Addresses=false -Xmx1024M'
+# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Djava.net.preferIPv6Addresses=false -Xmx1024M -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+# export GDK_CORE_DEVICE_EVENTS=1
+
+export QT_QPA_PLATFORMTHEME=gtk2
+
+inputplug -v -c $HOME/.xkb_load_hook
+$HOME/.xkb_load

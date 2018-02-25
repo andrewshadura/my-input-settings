@@ -1,0 +1,29 @@
+! switcher: Super_L = First/Last group
+! keycode 133 = ISO_First_Group ISO_Last_Group
+! yet another switcher: Menu = Next/Prev group
+! keycode 135 = ISO_Next_Group ISO_Prev_Group
+! keycode  51 = backslash bar slash backslash dead_grave dead_breve slash bar
+! keycode  51 = slash bar slash bar dead_grave dead_breve slash bar
+! ! keycode 223 = XF86Mail
+! ! keycode 158 = XF86WWW
+! ! keycode 122 = XF86AudioLowerVolume 
+! ! keycode 123 = XF86AudioRaiseVolume
+! ! keycode 180 = XF86HomePage
+! ! keycode 225 = XF86Search
+! ! keycode 248 = XF86BrightnessAdjust
+! keycode  13 = 4 dollar 4 semicolon U00DF EuroSign 4 semicolon
+! keycode  14 = 5 percent 5 percent onehalf onequarter 5 percent
+
+! keycode  26 = e E Cyrillic_u Cyrillic_U Cyrillic_u Cyrillic_U
+! keycode  25 = w W Cyrillic_tse Cyrillic_TSE U0259 U025B Cyrillic_tse Cyrillic_TSE
+! keycode  26 = e E Cyrillic_u Cyrillic_U U0259 U025B Cyrillic_u Cyrillic_U U0259 U025B
+! keycode  49 = grave asciitilde Cyrillic_io Cyrillic_IO U0301 U0301 Cyrillic_io Cyrillic_IO U0301 U0301
+! keycode  40 = d D Cyrillic_ve Cyrillic_VE scaron Scaron Cyrillic_ve Cyrillic_VE
+
+! Map XF86AudioPlay to space to make it usable in mplayer
+! keycode 172 = U0020
+
+! keycode  56 = b B Cyrillic_i Cyrillic_I U2033 U2032 Ukrainian_i Ukrainian_I
+
+! quote symbols
+! keycode 94 = U201D U201C guillemotright guillemotleft guillemotright guillemotleft guillemotright guillemotleft

@@ -1,0 +1,14 @@
+xkb_keymap {
+    xkb_keycodes  {
+        include "evdev+aliases(qwerty)+custom(sun)"
+        //override indicator 4 = "Kana";
+        //override indicator 5 = "Compose";
+    };
+    xkb_types     { include "complete"  };
+    xkb_compat    {
+        include "complete+custom(andrewsh)"
+    };
+    xkb_symbols   { include "pc+by(latin)+ru(winkeys):2+by:3+inet(evdev)+custom(andrewsh)+compose(menu)"  };
+    xkb_geometry  { include "sun(t6tuv)" };
+};
+

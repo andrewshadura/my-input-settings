@@ -1,0 +1,11 @@
+xkb_keycodes "sun" {
+    // include "sun(type6_usb)"
+    <LSGT> = 94;
+    <LALT> = 133;
+    <RWIN> = 105;
+    <LWIN> = 64;
+    <RALT> = 134;
+    <RCTL> = 108;
+
+    indicator 5 = "Compose";
+};

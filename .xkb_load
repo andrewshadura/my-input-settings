@@ -1,0 +1,11 @@
+#!/bin/sh -x
+
+xkbcomp -I$HOME/.xkb ~/.xkb_keymap $DISPLAY
+xmodmap ~/.xmodmaprc
+
+sun_id=$(xinput list | grep "HID 0430:0005" | grep -o 'id=[0-9]*' | cut -d = -f 2)
+
+if [ -n "$sun_id" ]
+then
+    xkbcomp -I$HOME/.xkb ~/.xkb_keymap_sun $DISPLAY
+fi

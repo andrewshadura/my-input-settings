@@ -1,0 +1,8 @@
+xkb_keymap {
+    xkb_keycodes  { include "evdev+aliases(qwerty)" };
+    xkb_types     { include "complete"  };
+    xkb_compat    { include "complete+custom(andrewsh)"  };
+    xkb_symbols   { include "pc+by(latin)+ru(winkeys):2+by:3+inet(evdev)+custom(andrewsh)"  };
+    xkb_geometry  { include "pc(pc105)" };
+};
+
